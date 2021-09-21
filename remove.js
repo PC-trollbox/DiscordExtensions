@@ -26,7 +26,7 @@ injectMe = async function() {
 			passwordTitle: "Password",
 			noErrors: "No errors found.",
 			iAm: "English",
-			myOpposite: "Русский",
+			myOpposite: "Change",
 			TRecruiting: "Toppats are Recruiting",
 			adminGetInfoToContinue: "Your system administrator will ask for some information to continue the operation.",
 			answerQuestionButton: "Answer this question",
