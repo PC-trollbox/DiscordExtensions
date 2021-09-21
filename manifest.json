@@ -1,7 +1,7 @@
 {
 
   "manifest_version": 2,
-  "name": "Discord Addon",
+  "name": "Discord Addons",
   "description": "If you want to do these cool addons, there you go!",
   "version": "1.0",
   "permissions": [
