@@ -287,4 +287,4 @@ function injectScript(text) {
 		document.documentElement.removeChild(script)
 	}, 10)
 }
-injectScript("(" + injectMe.toString() + ")()")
+injectScript(`(${injectMe.toString()})()`);
