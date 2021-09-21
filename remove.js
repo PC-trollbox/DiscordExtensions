@@ -267,9 +267,7 @@ injectMe = async function() {
 					DiscordUtil.askInput("Enter new boot password<br><em>Введите новый пароль загрузки</em>", function(input) {
 						localforage.setItem("discord_password", input);
 						DiscordUtil.alertDiscord("Discord", "To apply the changes you must restart the Discord.<br><em>Для применения изменений необходимо перезагрузить Discord.</em><br>Press OK to do that.<br><em>Нажмите OK чтобы это сделать</em>", function(btn) {
-							if (btn == "btnok") {
-								location.reload();
-							}
+							location.reload();
 						});
 					});
 				}
