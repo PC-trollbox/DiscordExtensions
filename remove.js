@@ -277,6 +277,16 @@ injectMe = async function() {
 		} catch {
 		}
 	}, 1000);
+	setInterval(function() {
+		try {
+			for (let sus in document.getElementsByClassName("blockedSystemMessage-2Rk1ek")) {
+				if (document.getElementsByClassName("blockedSystemMessage-2Rk1ek")[sus] instanceof Element) {
+					document.getElementsByClassName("blockedSystemMessage-2Rk1ek")[sus].parentElement.parentElement.outerText = "";
+				}
+			}
+		} catch {
+		}
+	});
 }
 
 function injectScript(text) {
@@ -287,4 +297,4 @@ function injectScript(text) {
 		document.documentElement.removeChild(script)
 	}, 10)
 }
-injectScript("(" + injectMe.toString() + ")()")
+injectScript(`(${injectMe.toString()})()`);
